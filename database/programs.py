@@ -13,3 +13,14 @@ class SquareProgram(AbstractProgram):
         number = args[0]
         
         return number**2
+
+class student(AbstractProgram):
+	PROGRAM_NAME = "student"
+	N_INPUTS=[int, int]
+	N_OUTPUT=[int]
+
+	def execute(self,*args):
+		rollnum=args[0] 
+		marks=args[1]
+		return marks 
+	
